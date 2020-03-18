@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8" />
+    <title>Bingo Cards</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
+  </head>
+
+  <body>
+    <h1>Bingo Cards</h1>
+    <form id="myForm">
+      <p>
+        <label for="playerSize">Amount of players:</label>
+        <input
+          id="playerSize"
+          name="playerSize"
+          type="number"
+          min="1"
+          max="999"
+          step="1"
+          value="10"
+        />
+      </p>
+      <p>
+        <label for="maxVal">Maximum value:</label>
+        <input
+          id="maxVal"
+          name="maxVal"
+          type="number"
+          min="1"
+          max="999"
+          step="1"
+          value="75"
+        />
+      </p>
+      <button type="submit">Create PDF</button>
+    </form>
+    <script src="js/jspdf.min.js"></script>
+    <script src="js/jspdf.plugin.autotable.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
